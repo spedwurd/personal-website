@@ -1,8 +1,8 @@
 console.log('hi')
 
 addEventListener('mousemove', (event) => {
-    let x = event.clientX;
-    let y = event.clientY;
+    let x = event.pageX;
+    let y = event.pageY;
   
     const cursorInfo = document.getElementById('cursor');
     cursorInfo.style.top = y-6 + 'px';
