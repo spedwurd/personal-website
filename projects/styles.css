@@ -7,6 +7,7 @@
     cursor: none;
     font-family: 'Inter';
     font-size: 25px;
+    color: white;
 }
 
 body {
@@ -20,6 +21,10 @@ h1 {
     padding-top: 10px;
     text-align: center;
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 nav {
@@ -46,26 +51,15 @@ nav {
     padding-bottom: 5%;
 }
 
-.side-box {
-    background-color: rgba(54, 147, 136, 1);
-    margin: 30px auto;
-    width: 90%;
-    height: 80%;
-    border-radius: 50px;
-    border: 3px solid white;
+.project-box {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.about-me {
-    border-right: 2px solid white;
-}
-
-.about-me, .other-box {
-    color: white;
-    font-size: 2rem;
-    margin-left: 25px;
-    flex-basis: 50%;
+.all-projects {
+    margin: 33.2px 0;
+    text-align: center;
+    border: 3px solid white;
 }
 
 .nav-items {
@@ -85,16 +79,27 @@ nav a {
     float: left;
 }
 
-a:link, a:visited {
+nav a {
+    color: black;
+}
+
+nav a:link, nav a:visited {
     color: black;
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     background-color: aquamarine;
     color: blue;
 }
 
+.project-links, .project-links a{
+    color: gray;
+}
+
+.project p {
+    font-size: 25px;
+}
 .divider {
     width: 90%;
     margin: auto;
@@ -120,4 +125,14 @@ a:hover {
     border-radius: 50%;
     background-color: rgba(255, 10, 71, 0.5);
     pointer-events: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    align-self: center;
+    margin-right: 40px;
+    padding: 0;
 }
