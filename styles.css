@@ -1,3 +1,5 @@
+/* main styling for all pages */
+
 @font-face {
     font-family: 'Inter';
     src: url('/assets/InterVariable.ttf');
@@ -27,74 +29,6 @@ body {
     padding: 0;
 }
 
-h1 {
-    color: white;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 2rem;
-}
-
-nav {
-    z-index: 1000;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-.message {
-    text-align: center;
-}
-
-.name {
-    float: left;
-}
-
-.blog-box {
-    display: flex;
-    justify-content: space-around;
-}
-
-.search {
-    text-align: center;
-    color: gray;
-}
-
-.project-box {
-    display: flex;
-    justify-content: space-around;
-}
-
-.all-projects {
-    margin: 33.2px 0;
-    text-align: center;
-    border: 3px solid white;
-}
-
-.project-links, .project-links a{
-    color: gray;
-}
-
-.project p {
-    font-size: 25px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    align-self: center;
-    margin-right: 40px;
-    padding: 0;
-}
-
 .main-box {
     background-color: rgba(49, 53, 161, 0.5);
     margin: 100px auto;
@@ -105,59 +39,11 @@ li {
     padding-bottom: 5%;
 }
 
-.side-box {
-    background-color: rgba(54, 147, 136, 1);
-    margin: 30px auto;
-    width: 90%;
-    height: 80%;
-    border-radius: 50px;
-    border: 3px solid white;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.about-me {
-    border-right: 2px solid white;
-}
-
-.about-me, .other-box {
+h1 {
     color: white;
+    padding-top: 10px;
+    text-align: center;
     font-size: 2rem;
-    margin-left: 25px;
-    flex-basis: 50%;
-}
-
-.nav-items {
-    height: 100%;
-}
-
-nav a {
-    display: flex;
-    align-items: center;
-    margin: 0 5px;
-    padding: 0 10px;
-    height: 100%;
-    float: right;
-}
-
-.name {
-    float: left;
-}
-
-a:link, a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: aquamarine;
-    color: blue;
-}
-
-.divider {
-    width: 90%;
-    margin: auto;
-    border-bottom: 3px solid white;
 }
 
 .cursor-outline {
@@ -181,4 +67,131 @@ a:hover {
     pointer-events: none;
     transition: transform 0.1s ease;
     transform-origin: center;
+}
+
+.cursor-animation {
+    animation-name: click;
+    animation-duration: 0.5s;
+}
+
+nav {
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-items {
+    height: 100%;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    padding: 0 10px;
+    height: 100%;
+    float: right;
+    color: black;
+}
+
+nav a:link, nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.divider {
+    width: 90%;
+    margin: auto;
+    border-bottom: 3px solid white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    align-self: center;
+    margin-right: 40px;
+    padding: 0;
+}
+
+/* about page styling */
+
+.side-box {
+    background-color: rgba(54, 147, 136, 1);
+    margin: 30px auto;
+    width: 90%;
+    height: 80%;
+    border-radius: 50px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-me {
+    border-right: 2px solid white;
+}
+
+.about-me, .other-box {
+    color: white;
+    font-size: 2rem;
+    margin-left: 25px;
+    flex-basis: 50%;
+}
+
+/* projects page styling */
+
+.project-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-projects {
+    margin: 33.2px 0;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.project-links, .project-links a{
+    color: gray;
+}
+
+.project p {
+    font-size: 25px;
+}
+
+/* blogs page styling */
+
+.blog-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-box p, .everything p {
+    padding: 0;
+    margin: 0;
+}
+
+.search {
+    text-align: center;
+    color: gray;
+}
+
+/* contact page styling */
+
+.message {
+    text-align: center;
 }
