@@ -165,6 +165,12 @@ li {
     border: 3px solid white;
 }
 
+.all-projects ul {
+    width: 200px;
+    height: 240px;
+    overflow-y: auto;
+}
+
 .project-links, .project-links a{
     color: gray;
 }
@@ -180,18 +186,57 @@ li {
     justify-content: space-around;
 }
 
+.post-box {
+    padding: 0 25px;
+    height: 40vh;
+    overflow-y: auto;
+}
+
 .blog-box p, .everything p {
-    padding: 0;
     margin: 0;
 }
 
 .search {
     text-align: center;
     color: gray;
+    padding-left: 25px;
+    padding-top: 17px;
+}
+
+.post-date, .first-post-date {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+.first-post-date {
+    padding-top: 0px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
 }
 
 /* contact page styling */
 
 .message {
     text-align: center;
+}
+
+/* article styling */
+
+.description {
+    text-align: center;
+}
+
+.article-content {
+    padding-left: 25px;
+}
+
+.article-category {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 0px;
 }
