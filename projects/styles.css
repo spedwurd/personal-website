@@ -3,6 +3,17 @@
     src: url('/assets/InterVariable.ttf');
 }
 
+@keyframes click {
+    0% {
+        background-color: aqua;
+        transform: scale(0.25);
+    }
+    100% {
+        background-color: rgba(255, 10, 71, 0.5);
+        transform: scale(1);
+    }
+}
+
 * {
     cursor: none;
     font-family: 'Inter';
@@ -125,6 +136,8 @@ nav a:hover {
     border-radius: 50%;
     background-color: rgba(255, 10, 71, 0.5);
     pointer-events: none;
+    transition: transform 0.1s ease;
+    transform-origin: center;
 }
 
 ul {

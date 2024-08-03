@@ -11,5 +11,11 @@ addEventListener('mousemove', (event) => {
     const cursorOutlineInfo = document.getElementById('cursor-outline');
     cursorOutlineInfo.style.top = y-15 + 'px';
     cursorOutlineInfo.style.left = x-11.5 + 'px'
-    cursorOutlineInfo.style.transform = `translate(${clientX}px, ${clientY}px)`;
 }) 
+
+addEventListener('click', async (event) => {
+    let cursor = document.getElementById('cursor');
+    cursor.classList.add('cursor-animation');
+    await new Promise(r => setTimeout(r, 250));
+    cursor.classList.remove('cursor-animation');
+})
