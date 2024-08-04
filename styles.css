@@ -212,19 +212,26 @@ li {
     padding-top: 17px;
 }
 
-.post-date, .first-post-date {
+.post-date, #first-post-date {
     font-weight: bold;
     font-size: 1.3rem;
     padding-top: 10px;
 }
 
-.first-post-date {
+#first-post-date {
     padding-top: 0px;
 }
 
 .top-bar {
     display: flex;
     align-items: center;
+}
+
+#blog-search {
+    margin-top: 20px;
+    margin-left: 15px;
+    background: none;
+    border: none;
 }
 
 /* contact page styling */
