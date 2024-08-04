@@ -175,8 +175,17 @@ li {
     color: gray;
 }
 
-.project p {
+.featured-project p {
     font-size: 25px;
+}
+
+#projects-search {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+::placeholder {
+    text-align: center;
 }
 
 /* blogs page styling */

@@ -19,3 +19,25 @@ addEventListener('click', async (event) => {
     await new Promise(r => setTimeout(r, 250));
     cursor.classList.remove('cursor-animation');
 })
+
+addEventListener('DOMContentLoaded', (event) => {
+    const projectsSearch = document.getElementById('projects-search');
+
+    projectsSearch.addEventListener('input', (event) => {
+        const projectSearchValue = event.target.value;
+        const projects = document.getElementsByClassName('project');
+        for (project of projects) {
+            project_name = project.innerHTML;
+            console.log(project_name)
+            console.log(project)
+            if (project_name.includes(projectSearchValue)) {
+                project.style.visibility = 'visible';
+            } else {
+                project.style.visibility = 'hidden';
+            }
+            console.log(project_name.includes(projectSearchValue));
+        }
+        console.log(projects);
+        console.log(projectSearchValue);
+})
+})
