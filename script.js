@@ -22,22 +22,25 @@ addEventListener('click', async (event) => {
 
 addEventListener('DOMContentLoaded', (event) => {
     const projectsSearch = document.getElementById('projects-search');
-
+    const allProjects = Array.from(document.getElementsByClassName('project'));
+    let removedNodes = [];
     projectsSearch.addEventListener('input', (event) => {
         const projectSearchValue = event.target.value;
         const projects = document.getElementsByClassName('project');
-        for (project of projects) {
-            project_name = project.innerHTML;
-            console.log(project_name)
-            console.log(project)
+        for (project of allProjects) {
+            project_name = project.innerText;
             if (project_name.includes(projectSearchValue)) {
-                project.style.visibility = 'visible';
-            } else {
-                project.style.visibility = 'hidden';
+                for (p of removedNodes) {
+                    if (p == project_name) {
+                        topList = document.getElementById("projects-list");
+                        topList.appendChild(project);
+                    }
             }
-            console.log(project_name.includes(projectSearchValue));
+            } else {
+                removedNodes.push(project_name);
+                project.remove();
+
+            }
         }
-        console.log(projects);
-        console.log(projectSearchValue);
 })
 })
