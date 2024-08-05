@@ -16,6 +16,15 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 * {
     cursor: none;
     font-family: 'Inter';
@@ -27,6 +36,7 @@ body {
     background-color: #497B7E;
     margin: 0;
     padding: 0;
+    animation: fadeIn ease-in 0.25s;
 }
 
 .main-box {
@@ -37,6 +47,7 @@ body {
     border-radius: 50px;
     border: 3px solid black;
     padding-bottom: 5%;
+    animation: fadeIn ease-in 0.5s;
 }
 
 h1 {
@@ -44,6 +55,12 @@ h1 {
     padding-top: 10px;
     text-align: center;
     font-size: 2rem;
+    animation: fadeIn ease-in 0.75s;
+
+}
+
+p {
+    animation: fadeIn ease-in 0.75s;
 }
 
 .cursor-outline {
@@ -139,6 +156,7 @@ li {
     border: 3px solid white;
     display: flex;
     justify-content: space-evenly;
+    animation: fadeIn ease-in 0.75s;
 }
 
 .about-me {
